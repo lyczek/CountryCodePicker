@@ -1165,10 +1165,10 @@ public class CountryCodePicker extends RelativeLayout {
       Log.d(TAG, "setPhoneNumberHint called");
       Log.d(TAG, "mSelectedCountry.getIso() = " + mSelectedCountry.getIso());
       Log.d(TAG,
-          "hint = " + mPhoneUtil.format(phoneNumber, PhoneNumberUtil.PhoneNumberFormat.NATIONAL));
+          "hint = " + mPhoneUtil.format(phoneNumber, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL));
     }
 
-    String hint = mPhoneUtil.format(phoneNumber, PhoneNumberUtil.PhoneNumberFormat.NATIONAL);
+    String hint = mPhoneUtil.format(phoneNumber, PhoneNumberUtil.PhoneNumberFormat.INTERNATIONAL);
     //if (mRegisteredPhoneNumberTextView.getHint() != null) {
     //  mRegisteredPhoneNumberTextView.setHint("");
     //}
